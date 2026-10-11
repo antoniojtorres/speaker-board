@@ -2,6 +2,8 @@
 
 A screen for a conversation happening in a room. It listens, writes down who said what, and builds a live board that helps anyone glancing at it follow along: who and what is being discussed, the facts behind it, and where each person stands.
 
+The original idea comes from [this speaker board](https://rossi.lol/wall-piece.html).
+
 It has two views:
 
 - **Conversation:** the live transcript, color-coded by speaker, with each person's talk time and an audio-reactive visual in the background.
@@ -87,7 +89,7 @@ All model calls go through OpenRouter, so the models can be swapped in `.env`. E
 
 A React app (Vite, Tailwind, shadcn/ui) with the two views:
 
-- **Conversation:** transcript rows that stream in live and settle when the speaker pauses, a talk-time panel, and a spectrum visual ported from an earlier piece (blue dots mirrored around the center that pulse with the room's sound).
+- **Conversation:** transcript rows that stream in live and settle when the speaker pauses, a talk-time panel, and a spectrum visual ported from [the original speaker board](https://rossi.lol/wall-piece.html) (blue dots mirrored around the center that pulse with the room's sound).
 - **Board:** the tiles below, newest first, with the featured tile pinned full-width at the top and background tiles shown compact.
 
 | Tile | Shows |
